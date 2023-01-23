@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7095136406069969426}
   - component: {fileID: 9143530318145402845}
+  - component: {fileID: -6889920198619354838}
+  - component: {fileID: 5415992785289051707}
   m_Layer: 0
   m_Name: conveyorEnter
   m_TagString: Untagged
@@ -71,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 210883839
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c8e13ef083a2dfb4eb8cc6c6024e3228, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -84,3 +86,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-6889920198619354838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5544438162107364902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4caabe94cbb8b4a4ea65b0ee879b9942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outputObject: {fileID: 1370874692409575163, guid: 9c53e5fed8a326443b7bfc061c686bf5, type: 3}
+  outputRate: 5
+  stock: 1
+  truckPresent: 1
+  gridController: {fileID: 0}
+--- !u!61 &5415992785289051707
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5544438162107364902}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04166794, y: 0.038463593}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.45, y: 2.74}
+    newSize: {x: 1.45, y: 2.74}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40509415, y: 1.2399483}
+  m_EdgeRadius: 0

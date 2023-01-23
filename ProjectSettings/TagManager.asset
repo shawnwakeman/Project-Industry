@@ -4,11 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - unit
-  - ant
-  - idlecollider
-  - unit2
-  - hub
+  - woodChopper
+  - packingMachine
+  - item
   layers:
   - Default
   - TransparentFX
@@ -49,11 +47,14 @@ TagManager:
   - name: Background
     uniqueID: 3052022355
     locked: 0
+  - name: Lights
+    uniqueID: 862314869
+    locked: 0
   - name: ConveyorBelts
     uniqueID: 4161509533
     locked: 0
-  - name: Lights
-    uniqueID: 862314869
+  - name: Items
+    uniqueID: 2112231685
     locked: 0
   - name: Parts
     uniqueID: 210883839

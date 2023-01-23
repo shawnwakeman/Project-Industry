@@ -23,9 +23,6 @@ public class GridController : MonoBehaviour
 
     private void Start()
     {
-        Vector3 mousePos = Input.mousePosition;
-        mousePos.z = Camera.main.nearClipPlane;
-        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
         InitializeGrid();
         gridDebug.SetFlowField(currentGrid);
     }

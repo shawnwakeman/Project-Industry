@@ -39,7 +39,6 @@ public class NightCycleController : MonoBehaviour
             if (t < 0) { sign = 1; }
             if (sign == 1) { currentSecond += .1f; }
             if (sign == -1) { currentSecond += -.1f; }
-            Debug.Log(t);
             yield return new WaitForSeconds(.1f);
         }
     }

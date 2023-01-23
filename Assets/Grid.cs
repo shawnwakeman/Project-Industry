@@ -31,19 +31,24 @@ public class Grid
                 grid[x,y] = new Cell(worldPos, new Vector2Int(x,y));
             }
         }
+
+        SetEdgeVelocitys();
     }
 
-    // private Cell GetCellAtRelativePos(Vector2Int orignPos, Vector2Int relativePos)
-    // {
-    //     Vector2Int finalPos = orignPos + relativePos;
- 
-    //     if (finalPos.x < 0 || finalPos.x >= gridSize.x || finalPos.y < 0 || finalPos.y >= gridSize.y)
-    //     {
-    //         return null;
-    //     }
- 
-    //     else { return grid[finalPos.x, finalPos.y]; }
-    // }
+    private void SetEdgeVelocitys()
+    {
+        for (int i = 0; i < gridSize.y; i++)
+        {
+            grid[0, i].SetVelocity(new Vector2(1, 0));
+            grid[0, i].cellOcupided = true;
+        }
+        for (int i = 0; i < gridSize.y; i++)
+        {
+            grid[gridSize.x -1, i].SetVelocity(new Vector2(1, 0));
+            grid[gridSize.x - 1, i].cellOcupided = true;
+
+        }
+    }
     
 
     public Cell GetCellFromWorldPos(Vector3 worldPos )
@@ -60,5 +65,7 @@ public class Grid
         return grid[(int)x, (int)y];
 
     }
+
+ 
 
 }
